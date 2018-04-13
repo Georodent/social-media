@@ -25,6 +25,22 @@
     }
   
   </style>
+  <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 </head>
   
 <body>
@@ -37,4 +53,8 @@
   <img src="images/nothingcover1.jpg">
   <p>This is the album cover of their first release.</p>
   <a href="https://golygrim.bandcamp.com/">Check it out here!!</a>
+  <a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=Check out this page https%3A%2F%2Fgeorodent.github.io%2Fsocial-media%2F">
+Tweet</a>
 </body>
+</html>
